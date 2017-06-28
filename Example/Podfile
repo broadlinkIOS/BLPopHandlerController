@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BLPopHandlerController_Example' do
+  pod 'BLPopHandlerController', :path => '../'
+
+  target 'BLPopHandlerController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
