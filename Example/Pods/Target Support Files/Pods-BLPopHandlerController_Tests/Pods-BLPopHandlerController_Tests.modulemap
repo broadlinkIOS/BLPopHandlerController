@@ -1,0 +1,6 @@
+framework module Pods_BLPopHandlerController_Tests {
+  umbrella header "Pods-BLPopHandlerController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CA513B9422A037A661A4B11FACD8E62 /* BLPopHandlerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F425E9F5110823DCB867B805A5B77BB3 /* BLPopHandlerController.m */; };
+		16E979B96EBCDEA05DE2732C14404352 /* BLPopControlViewButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A9278A5FC1C558BDADB36B5F4DFBDC /* BLPopControlViewButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2948476517F259FB1E7EE4C19DD77CE9 /* PresentationAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C4F9F9E97054903D9647023DD8DAFF2 /* PresentationAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D8BC07269286A015A1137867401F00 /* BLPopHandlerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB9B0460F56DC9F174B76CC22A7EC75 /* BLPopHandlerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		502FEB14959B38BF3A8D2DC8DED6B14A /* PresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7BCAB99ACE57EC74EE987D4F69AB09 /* PresentationController.m */; };
+		70B0A829027BD62AA1BCF6BEB6365592 /* PresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17EC4826BF67EC853575081CF54F15 /* PresentationAnimation.m */; };
+		89D3810CDE0685201870F75CFAC8386B /* Pods-BLPopHandlerController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FE39BFF84A404B681CA656C5C058F /* Pods-BLPopHandlerController_Example-dummy.m */; };
+		8B5F2B9B559289ED2D68EC643648DB97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9E3BB35082F497CAA4EB03411D1D09FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9F4B55D72F778F88E7E5835940CB9600 /* BLPopControlViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D635853DC1CF2B7212ED30C6F9B299D /* BLPopControlViewButton.m */; };
+		A09088F94DF49890D64E06FCD8611634 /* PresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 960163FD616772865D2763BE0775B594 /* PresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1CF09621CE70B675E524F7C42F8B96A /* BLPopHandlerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD32164F2455DBCE6B4597FEF8F5B2FE /* BLPopHandlerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41CE9A4CAC66868F6E59E0FACD655AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BDBA3E8423D4ADF912AEB68163F25185 /* PresentationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 981E935612270C64406220396182D539 /* PresentationTransition.m */; };
+		D20CE0F53E54C032DD7D64ABC00664EE /* Pods-BLPopHandlerController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3AFAF290D0843429E8736C44F85999 /* Pods-BLPopHandlerController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5336E666EA16CD5107452CC5246D0FE /* BLPopHandlerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8EE452ED311BE712BC9C14B42C428 /* BLPopHandlerController-dummy.m */; };
+		F0F166B9AC56EF319A527EA5B0984CF5 /* PresentationTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CEC7673698C6D815FF83F9608772A4F /* PresentationTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1D49C7C70AD72D89B557C8473B31B67 /* Pods-BLPopHandlerController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 542A3F6293BC0919AF7FCDE487D38CEA /* Pods-BLPopHandlerController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBE6D71BE9C16FEB89552C1002E060B8 /* Pods-BLPopHandlerController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 727AC2D31387AA6819DCB33173D46A62 /* Pods-BLPopHandlerController_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F641A3CFF4A1ED9B1AC15D433DA4EF7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7906A5FF6627E5904E205FC8CDD0BED6;
+			remoteInfo = BLPopHandlerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0310AB1B1E32EEABA4AFD698E1BB8CAB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0501D1B14960B4B287B320A1FB089CC9 /* Pods-BLPopHandlerController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLPopHandlerController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1ACCE32B4EB0F2D821F380D9F8D2E9EF /* Pods-BLPopHandlerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLPopHandlerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CEC7673698C6D815FF83F9608772A4F /* PresentationTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PresentationTransition.h; sourceTree = "<group>"; };
+		208B16154C2BDA14E65323154475BB74 /* BLPopHandlerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLPopHandlerController.xcconfig; sourceTree = "<group>"; };
+		2D635853DC1CF2B7212ED30C6F9B299D /* BLPopControlViewButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLPopControlViewButton.m; sourceTree = "<group>"; };
+		317929B35887D8BAC5184EA205F2F185 /* Pods-BLPopHandlerController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLPopHandlerController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		353E90FAC5E688BE82C01FC51B795A57 /* Pods-BLPopHandlerController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLPopHandlerController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B0FE39BFF84A404B681CA656C5C058F /* Pods-BLPopHandlerController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLPopHandlerController_Example-dummy.m"; sourceTree = "<group>"; };
+		3C4F9F9E97054903D9647023DD8DAFF2 /* PresentationAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PresentationAnimation.h; sourceTree = "<group>"; };
+		3E4F047C328A57609616DE79433B32E1 /* Pods_BLPopHandlerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLPopHandlerController_Example.framework; path = "Pods-BLPopHandlerController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		421BFBA2474DBD70F44F9468FAF4354D /* BLPopHandlerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLPopHandlerController-prefix.pch"; sourceTree = "<group>"; };
+		483B185087CBE6AA1CFBC20C4FAFBBDE /* Pods-BLPopHandlerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLPopHandlerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		542A3F6293BC0919AF7FCDE487D38CEA /* Pods-BLPopHandlerController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLPopHandlerController_Example-umbrella.h"; sourceTree = "<group>"; };
+		5687F4F0736F2A3A82FA7A1D537E33A8 /* Pods-BLPopHandlerController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLPopHandlerController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5D17EC4826BF67EC853575081CF54F15 /* PresentationAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PresentationAnimation.m; sourceTree = "<group>"; };
+		6412DCC3ADDC729D29FA6B84FA4241DE /* Pods-BLPopHandlerController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLPopHandlerController_Tests-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		727AC2D31387AA6819DCB33173D46A62 /* Pods-BLPopHandlerController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLPopHandlerController_Tests-dummy.m"; sourceTree = "<group>"; };
+		76A9278A5FC1C558BDADB36B5F4DFBDC /* BLPopControlViewButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLPopControlViewButton.h; sourceTree = "<group>"; };
+		77C0CD13E4097267FC6E17FA37DF30C1 /* Pods_BLPopHandlerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLPopHandlerController_Tests.framework; path = "Pods-BLPopHandlerController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0946490B09B3D955625A07A4748600 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8513EA9CD6BB77CA2DE885F6B9BE7E83 /* Pods-BLPopHandlerController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLPopHandlerController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D66C596586B76CE693A234E693436EB /* Pods-BLPopHandlerController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLPopHandlerController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		960163FD616772865D2763BE0775B594 /* PresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PresentationController.h; sourceTree = "<group>"; };
+		981E935612270C64406220396182D539 /* PresentationTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PresentationTransition.m; sourceTree = "<group>"; };
+		9F7BCAB99ACE57EC74EE987D4F69AB09 /* PresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PresentationController.m; sourceTree = "<group>"; };
+		A323DAA042CE4314EAB5803B674EAEE1 /* Pods-BLPopHandlerController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLPopHandlerController_Example-resources.sh"; sourceTree = "<group>"; };
+		AAD8EE452ED311BE712BC9C14B42C428 /* BLPopHandlerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLPopHandlerController-dummy.m"; sourceTree = "<group>"; };
+		AEB45382C4707A1D42CC1312B531481E /* BLPopHandlerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLPopHandlerController.framework; path = BLPopHandlerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D6AFB40246DBA3B8F6281755391B4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3AFAF290D0843429E8736C44F85999 /* Pods-BLPopHandlerController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLPopHandlerController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CC1E344DF475045A18B96102C523B7E4 /* Pods-BLPopHandlerController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLPopHandlerController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD32164F2455DBCE6B4597FEF8F5B2FE /* BLPopHandlerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLPopHandlerController.h; sourceTree = "<group>"; };
+		DA4133E6B954173A3D715195BA28F4D2 /* Pods-BLPopHandlerController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLPopHandlerController_Tests.modulemap"; sourceTree = "<group>"; };
+		DAB9B0460F56DC9F174B76CC22A7EC75 /* BLPopHandlerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLPopHandlerController-umbrella.h"; sourceTree = "<group>"; };
+		E37020FC986B278BF9AFF5500AA2957F /* Pods-BLPopHandlerController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLPopHandlerController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F21EF50F356812027F74C25FA820BD39 /* BLPopHandlerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BLPopHandlerController.modulemap; sourceTree = "<group>"; };
+		F425E9F5110823DCB867B805A5B77BB3 /* BLPopHandlerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLPopHandlerController.m; sourceTree = "<group>"; };
+		FEDBD5840D3533DD9EC6A5B7C6978DC2 /* Pods-BLPopHandlerController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLPopHandlerController_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		660D0540B474EA12D2C54BA72CE380AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41CE9A4CAC66868F6E59E0FACD655AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A569754494A0DB6037E6E743F5931E27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3BB35082F497CAA4EB03411D1D09FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3E61910C8436654A6F3A41125C107A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5F2B9B559289ED2D68EC643648DB97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02233D67307AF5504AF937093C78716F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F21EF50F356812027F74C25FA820BD39 /* BLPopHandlerController.modulemap */,
+				208B16154C2BDA14E65323154475BB74 /* BLPopHandlerController.xcconfig */,
+				AAD8EE452ED311BE712BC9C14B42C428 /* BLPopHandlerController-dummy.m */,
+				421BFBA2474DBD70F44F9468FAF4354D /* BLPopHandlerController-prefix.pch */,
+				DAB9B0460F56DC9F174B76CC22A7EC75 /* BLPopHandlerController-umbrella.h */,
+				B5D6AFB40246DBA3B8F6281755391B4F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BLPopHandlerController";
+			sourceTree = "<group>";
+		};
+		5FD8929640D24491586883978F84C1F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73F2AD5567E85B225F352062DCD748F9 /* Pods-BLPopHandlerController_Example */,
+				FEB73226C04EF2B8BD729433F67FE7B9 /* Pods-BLPopHandlerController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		73F2AD5567E85B225F352062DCD748F9 /* Pods-BLPopHandlerController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7A0946490B09B3D955625A07A4748600 /* Info.plist */,
+				FEDBD5840D3533DD9EC6A5B7C6978DC2 /* Pods-BLPopHandlerController_Example.modulemap */,
+				353E90FAC5E688BE82C01FC51B795A57 /* Pods-BLPopHandlerController_Example-acknowledgements.markdown */,
+				8513EA9CD6BB77CA2DE885F6B9BE7E83 /* Pods-BLPopHandlerController_Example-acknowledgements.plist */,
+				3B0FE39BFF84A404B681CA656C5C058F /* Pods-BLPopHandlerController_Example-dummy.m */,
+				8D66C596586B76CE693A234E693436EB /* Pods-BLPopHandlerController_Example-frameworks.sh */,
+				A323DAA042CE4314EAB5803B674EAEE1 /* Pods-BLPopHandlerController_Example-resources.sh */,
+				542A3F6293BC0919AF7FCDE487D38CEA /* Pods-BLPopHandlerController_Example-umbrella.h */,
+				5687F4F0736F2A3A82FA7A1D537E33A8 /* Pods-BLPopHandlerController_Example.debug.xcconfig */,
+				0501D1B14960B4B287B320A1FB089CC9 /* Pods-BLPopHandlerController_Example.release.xcconfig */,
+			);
+			name = "Pods-BLPopHandlerController_Example";
+			path = "Target Support Files/Pods-BLPopHandlerController_Example";
+			sourceTree = "<group>";
+		};
+		74AAD42C817AC0030B62ECBAF7AF77BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEB45382C4707A1D42CC1312B531481E /* BLPopHandlerController.framework */,
+				3E4F047C328A57609616DE79433B32E1 /* Pods_BLPopHandlerController_Example.framework */,
+				77C0CD13E4097267FC6E17FA37DF30C1 /* Pods_BLPopHandlerController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8E23E53F07D2A751862562C665A095DC /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				74AAD42C817AC0030B62ECBAF7AF77BE /* Products */,
+				5FD8929640D24491586883978F84C1F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E86DF8300495BAE4B870289B88CE1E5 /* BLPopHandlerController */ = {
+			isa = PBXGroup;
+			children = (
+				C0FE884687DA131C7F51F63E6E51005A /* Classes */,
+			);
+			name = BLPopHandlerController;
+			path = BLPopHandlerController;
+			sourceTree = "<group>";
+		};
+		8E23E53F07D2A751862562C665A095DC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DB198591F2736A3AE8D152B56E0D375 /* BLPopHandlerController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9DB198591F2736A3AE8D152B56E0D375 /* BLPopHandlerController */ = {
+			isa = PBXGroup;
+			children = (
+				7E86DF8300495BAE4B870289B88CE1E5 /* BLPopHandlerController */,
+				02233D67307AF5504AF937093C78716F /* Support Files */,
+			);
+			name = BLPopHandlerController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B779E5073DA840705DB0E7F201E4F3BB /* BLPopHandler */ = {
+			isa = PBXGroup;
+			children = (
+				76A9278A5FC1C558BDADB36B5F4DFBDC /* BLPopControlViewButton.h */,
+				2D635853DC1CF2B7212ED30C6F9B299D /* BLPopControlViewButton.m */,
+				CD32164F2455DBCE6B4597FEF8F5B2FE /* BLPopHandlerController.h */,
+				F425E9F5110823DCB867B805A5B77BB3 /* BLPopHandlerController.m */,
+			);
+			name = BLPopHandler;
+			path = BLPopHandler;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0FE884687DA131C7F51F63E6E51005A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B779E5073DA840705DB0E7F201E4F3BB /* BLPopHandler */,
+				D3947022237DC44D7E6620ED1A400757 /* Presentation */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D3947022237DC44D7E6620ED1A400757 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F9F9E97054903D9647023DD8DAFF2 /* PresentationAnimation.h */,
+				5D17EC4826BF67EC853575081CF54F15 /* PresentationAnimation.m */,
+				960163FD616772865D2763BE0775B594 /* PresentationController.h */,
+				9F7BCAB99ACE57EC74EE987D4F69AB09 /* PresentationController.m */,
+				1CEC7673698C6D815FF83F9608772A4F /* PresentationTransition.h */,
+				981E935612270C64406220396182D539 /* PresentationTransition.m */,
+			);
+			name = Presentation;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FEB73226C04EF2B8BD729433F67FE7B9 /* Pods-BLPopHandlerController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0310AB1B1E32EEABA4AFD698E1BB8CAB /* Info.plist */,
+				DA4133E6B954173A3D715195BA28F4D2 /* Pods-BLPopHandlerController_Tests.modulemap */,
+				E37020FC986B278BF9AFF5500AA2957F /* Pods-BLPopHandlerController_Tests-acknowledgements.markdown */,
+				CC1E344DF475045A18B96102C523B7E4 /* Pods-BLPopHandlerController_Tests-acknowledgements.plist */,
+				727AC2D31387AA6819DCB33173D46A62 /* Pods-BLPopHandlerController_Tests-dummy.m */,
+				317929B35887D8BAC5184EA205F2F185 /* Pods-BLPopHandlerController_Tests-frameworks.sh */,
+				6412DCC3ADDC729D29FA6B84FA4241DE /* Pods-BLPopHandlerController_Tests-resources.sh */,
+				CA3AFAF290D0843429E8736C44F85999 /* Pods-BLPopHandlerController_Tests-umbrella.h */,
+				1ACCE32B4EB0F2D821F380D9F8D2E9EF /* Pods-BLPopHandlerController_Tests.debug.xcconfig */,
+				483B185087CBE6AA1CFBC20C4FAFBBDE /* Pods-BLPopHandlerController_Tests.release.xcconfig */,
+			);
+			name = "Pods-BLPopHandlerController_Tests";
+			path = "Target Support Files/Pods-BLPopHandlerController_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D2A43AF56EBB2291D039625650A74BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E979B96EBCDEA05DE2732C14404352 /* BLPopControlViewButton.h in Headers */,
+				47D8BC07269286A015A1137867401F00 /* BLPopHandlerController-umbrella.h in Headers */,
+				A1CF09621CE70B675E524F7C42F8B96A /* BLPopHandlerController.h in Headers */,
+				2948476517F259FB1E7EE4C19DD77CE9 /* PresentationAnimation.h in Headers */,
+				A09088F94DF49890D64E06FCD8611634 /* PresentationController.h in Headers */,
+				F0F166B9AC56EF319A527EA5B0984CF5 /* PresentationTransition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2515F3D401E3036222042B5BB0CA162 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20CE0F53E54C032DD7D64ABC00664EE /* Pods-BLPopHandlerController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C78D8F0FD0D823370E1A1C1F60C4E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D49C7C70AD72D89B557C8473B31B67 /* Pods-BLPopHandlerController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3BE039B884E34ED105C35C2A09C3D2C3 /* Pods-BLPopHandlerController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 294D61D6C8140CA7C34DBBF3B8059CB5 /* Build configuration list for PBXNativeTarget "Pods-BLPopHandlerController_Example" */;
+			buildPhases = (
+				D9112155CD6048BF61318C958E46A87A /* Sources */,
+				CF3E61910C8436654A6F3A41125C107A /* Frameworks */,
+				E7C78D8F0FD0D823370E1A1C1F60C4E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51210667FA2BE59BD53BE27085F61045 /* PBXTargetDependency */,
+			);
+			name = "Pods-BLPopHandlerController_Example";
+			productName = "Pods-BLPopHandlerController_Example";
+			productReference = 3E4F047C328A57609616DE79433B32E1 /* Pods_BLPopHandlerController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7906A5FF6627E5904E205FC8CDD0BED6 /* BLPopHandlerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DE202004EB25E08F2C919FD88B6517 /* Build configuration list for PBXNativeTarget "BLPopHandlerController" */;
+			buildPhases = (
+				5834BDCD1BC2B463C893899F606D5403 /* Sources */,
+				660D0540B474EA12D2C54BA72CE380AC /* Frameworks */,
+				2D2A43AF56EBB2291D039625650A74BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLPopHandlerController;
+			productName = BLPopHandlerController;
+			productReference = AEB45382C4707A1D42CC1312B531481E /* BLPopHandlerController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFBB514B87CD68D257DB8E2173463BE2 /* Pods-BLPopHandlerController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CEE083E0F3326A09FBBFB3B781BAD17 /* Build configuration list for PBXNativeTarget "Pods-BLPopHandlerController_Tests" */;
+			buildPhases = (
+				BE2CDF8EA5CB1A207AE4E255F0F37ABA /* Sources */,
+				A569754494A0DB6037E6E743F5931E27 /* Frameworks */,
+				C2515F3D401E3036222042B5BB0CA162 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BLPopHandlerController_Tests";
+			productName = "Pods-BLPopHandlerController_Tests";
+			productReference = 77C0CD13E4097267FC6E17FA37DF30C1 /* Pods_BLPopHandlerController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 74AAD42C817AC0030B62ECBAF7AF77BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7906A5FF6627E5904E205FC8CDD0BED6 /* BLPopHandlerController */,
+				3BE039B884E34ED105C35C2A09C3D2C3 /* Pods-BLPopHandlerController_Example */,
+				DFBB514B87CD68D257DB8E2173463BE2 /* Pods-BLPopHandlerController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5834BDCD1BC2B463C893899F606D5403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F4B55D72F778F88E7E5835940CB9600 /* BLPopControlViewButton.m in Sources */,
+				D5336E666EA16CD5107452CC5246D0FE /* BLPopHandlerController-dummy.m in Sources */,
+				0CA513B9422A037A661A4B11FACD8E62 /* BLPopHandlerController.m in Sources */,
+				70B0A829027BD62AA1BCF6BEB6365592 /* PresentationAnimation.m in Sources */,
+				502FEB14959B38BF3A8D2DC8DED6B14A /* PresentationController.m in Sources */,
+				BDBA3E8423D4ADF912AEB68163F25185 /* PresentationTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CDF8EA5CB1A207AE4E255F0F37ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE6D71BE9C16FEB89552C1002E060B8 /* Pods-BLPopHandlerController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9112155CD6048BF61318C958E46A87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D3810CDE0685201870F75CFAC8386B /* Pods-BLPopHandlerController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51210667FA2BE59BD53BE27085F61045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BLPopHandlerController;
+			target = 7906A5FF6627E5904E205FC8CDD0BED6 /* BLPopHandlerController */;
+			targetProxy = F641A3CFF4A1ED9B1AC15D433DA4EF7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BD53C4CAB5BFC068E6F74B50CD2565A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208B16154C2BDA14E65323154475BB74 /* BLPopHandlerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BLPopHandlerController/BLPopHandlerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLPopHandlerController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLPopHandlerController/BLPopHandlerController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BLPopHandlerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		669F05BF3BF6FC173CA2FCBFAAFA7E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0501D1B14960B4B287B320A1FB089CC9 /* Pods-BLPopHandlerController_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLPopHandlerController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLPopHandlerController_Example/Pods-BLPopHandlerController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BLPopHandlerController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		781527CD6233DF9B0CCD31BD6C72A930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 483B185087CBE6AA1CFBC20C4FAFBBDE /* Pods-BLPopHandlerController_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLPopHandlerController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLPopHandlerController_Tests/Pods-BLPopHandlerController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BLPopHandlerController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90912CFB50D025AF9D869757246FEB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208B16154C2BDA14E65323154475BB74 /* BLPopHandlerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BLPopHandlerController/BLPopHandlerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLPopHandlerController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLPopHandlerController/BLPopHandlerController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BLPopHandlerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7A6B2D84B13D051A1871B34F748AAC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5687F4F0736F2A3A82FA7A1D537E33A8 /* Pods-BLPopHandlerController_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLPopHandlerController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLPopHandlerController_Example/Pods-BLPopHandlerController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BLPopHandlerController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5040FDB0A976C91DCE3FC34739A6EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ACCE32B4EB0F2D821F380D9F8D2E9EF /* Pods-BLPopHandlerController_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLPopHandlerController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLPopHandlerController_Tests/Pods-BLPopHandlerController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BLPopHandlerController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		294D61D6C8140CA7C34DBBF3B8059CB5 /* Build configuration list for PBXNativeTarget "Pods-BLPopHandlerController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7A6B2D84B13D051A1871B34F748AAC6 /* Debug */,
+				669F05BF3BF6FC173CA2FCBFAAFA7E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DE202004EB25E08F2C919FD88B6517 /* Build configuration list for PBXNativeTarget "BLPopHandlerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BD53C4CAB5BFC068E6F74B50CD2565A /* Debug */,
+				90912CFB50D025AF9D869757246FEB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CEE083E0F3326A09FBBFB3B781BAD17 /* Build configuration list for PBXNativeTarget "Pods-BLPopHandlerController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5040FDB0A976C91DCE3FC34739A6EE8 /* Debug */,
+				781527CD6233DF9B0CCD31BD6C72A930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module BLPopHandlerController {
+  umbrella header "BLPopHandlerController-umbrella.h"
+
+  export *
+  module * { export * }
+}

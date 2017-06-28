@@ -1,0 +1,6 @@
+framework module Pods_BLPopHandlerController_Example {
+  umbrella header "Pods-BLPopHandlerController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
