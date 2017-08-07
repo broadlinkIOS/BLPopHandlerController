@@ -10,14 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, BLPopActionStyle) {
+    BLPopActionDefault = 0,
+    BLPopActionMore,
+};
+
 @interface BLPopAction : NSObject
 
 + (instancetype)actionWithTitle:(nullable NSString *)title
                       withImage:(UIImage *)image
+                          style:(BLPopActionStyle)style
                         handler:(void (^__nullable)(BLPopAction *action))handler;
 
 @property (nullable, nonatomic, readonly) NSString *title;
 @property (nullable, nonatomic, readonly) UIImage *image;
+@property (nonatomic, readonly) BLPopActionStyle style;
 
 @end
 

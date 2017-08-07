@@ -16,16 +16,18 @@
 @interface BLPopAction()
 @property (nullable, nonatomic, readwrite) NSString *title;
 @property (nullable, nonatomic, readwrite) UIImage *image;
+@property (nonatomic, readwrite) BLPopActionStyle style;
 @property (nonatomic, copy) void (^event)(BLPopAction *action);
 @end
 
 @implementation BLPopAction
 
-+ (instancetype)actionWithTitle:(nullable NSString *)title withImage:(UIImage *)image handler:(void (^__nullable)(BLPopAction *action))handler
++ (instancetype)actionWithTitle:(nullable NSString *)title withImage:(UIImage *)image style:(BLPopActionStyle)style handler:(void (^__nullable)(BLPopAction *action))handler
 {
     BLPopAction *action = [[BLPopAction alloc]init];
     action.title = title;
     action.image = image;
+    action.style = style;
     action.event = handler;
     return action;
 }
@@ -121,7 +123,7 @@
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
     const CGFloat width = 51 + 20.0f;
-    const CGFloat height = 51 + 20.0f;
+    const CGFloat height = 51 + 20.0f + 10.0f;
     [button setBounds:CGRectMake(0, 0, width, height)];
     button.center = self.view.center;
     [button setImage:image forState:UIControlStateNormal];
@@ -131,6 +133,9 @@
 
 - (void)btnClick:(UIButton *)btn
 {
+    if(_actions[btn.tag].style == BLPopActionMore)
+        [self dismissViewControllerAnimated:NO completion:nil];
+    
     _actions[btn.tag].event(_actions[btn.tag]);
 }
 
@@ -204,7 +209,6 @@
     } completion:^(BOOL finished) {
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

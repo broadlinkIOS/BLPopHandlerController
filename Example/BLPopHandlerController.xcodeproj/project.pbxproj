@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0882EE331DD3B15BE8618A1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0882EE331DD3B15BE8618A1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BLPopHandlerController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLPopHandlerController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,11 +61,11 @@
 		7995238A9FA9A8498E9E94A0 /* Pods_BLPopHandlerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLPopHandlerController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B82EE101A426952358A4948 /* Pods-BLPopHandlerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLPopHandlerController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLPopHandlerController_Tests/Pods-BLPopHandlerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B57845E5EBA5C17BFA525556 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B57845E5EBA5C17BFA525556 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C66D9562EC0D88B0B3CDAE3D /* Pods-BLPopHandlerController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLPopHandlerController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLPopHandlerController_Example/Pods-BLPopHandlerController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DD3B91D3BB55D6D3BA85F182 /* Pods-BLPopHandlerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLPopHandlerController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLPopHandlerController_Tests/Pods-BLPopHandlerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E83D9C3E866B502CEAF96F5A /* Pods_BLPopHandlerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLPopHandlerController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE850B8D4D6EAD6248A0C7A2 /* BLPopHandlerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BLPopHandlerController.podspec; path = ../BLPopHandlerController.podspec; sourceTree = "<group>"; };
+		FE850B8D4D6EAD6248A0C7A2 /* BLPopHandlerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BLPopHandlerController.podspec; path = ../BLPopHandlerController.podspec; sourceTree = "<group>"; };
 		FF7F946F6EF0326922A1A561 /* Pods-BLPopHandlerController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLPopHandlerController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLPopHandlerController_Example/Pods-BLPopHandlerController_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
