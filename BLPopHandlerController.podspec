@@ -38,4 +38,4 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/BLPopHandler/BLPopHandlerController.h'
   # s.frameworks = 'UIKit','Foundation'
-endt => 'https://github.com/broadlinkIOS/BLPopHandlerController.giti
+end
