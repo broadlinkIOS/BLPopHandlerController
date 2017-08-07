@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BLPopAction : NSObject
 
 + (instancetype)actionWithTitle:(nullable NSString *)title
-                  withImageName:(NSString *)imageName
+                      withImage:(UIImage *)image
                         handler:(void (^__nullable)(BLPopAction *action))handler;
 
 @property (nullable, nonatomic, readonly) NSString *title;
-@property (nullable, nonatomic, readonly) NSString *imageName;
+@property (nullable, nonatomic, readonly) UIImage *image;
 
 @end
 

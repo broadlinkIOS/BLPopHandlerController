@@ -43,19 +43,19 @@
 - (void)onImageViewTap
 {
     BLPopHandlerController *vc = [BLPopHandlerController popControllerWithCenterImage:[imgView image] originFrame:[imgView.superview convertRect:imgView.frame toView:nil]];
-    [vc addAction:[BLPopAction actionWithTitle:@"aaa" withImageName:@"imga" handler:^(BLPopAction * _Nonnull action){
+    [vc addAction:[BLPopAction actionWithTitle:@"aaa" withImage:[UIImage imageNamed:@"imga"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"aaa");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"bbb" withImageName:@"imgb" handler:^(BLPopAction * _Nonnull action){
+    [vc addAction:[BLPopAction actionWithTitle:@"bbb" withImage:[UIImage imageNamed:@"imgb"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"bbb");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"ccc" withImageName:@"imge" handler:^(BLPopAction * _Nonnull action){
+    [vc addAction:[BLPopAction actionWithTitle:@"ccc" withImage:[UIImage imageNamed:@"imge"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ccc");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"ddd" withImageName:@"imgd" handler:^(BLPopAction * _Nonnull action){
+    [vc addAction:[BLPopAction actionWithTitle:@"ddd" withImage:[UIImage imageNamed:@"imgd"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ddd");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"more" withImageName:@"imgc" handler:^(BLPopAction * _Nonnull action){
+    [vc addAction:[BLPopAction actionWithTitle:@"more" withImage:[UIImage imageNamed:@"imgc"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"more");
     }]];
     [self presentViewController:vc animated:YES completion:^{

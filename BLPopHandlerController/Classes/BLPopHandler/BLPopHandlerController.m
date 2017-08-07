@@ -15,17 +15,17 @@
 
 @interface BLPopAction()
 @property (nullable, nonatomic, readwrite) NSString *title;
-@property (nullable, nonatomic, readwrite) NSString *imageName;
+@property (nullable, nonatomic, readwrite) UIImage *image;
 @property (nonatomic, copy) void (^event)(BLPopAction *action);
 @end
 
 @implementation BLPopAction
 
-+ (instancetype)actionWithTitle:(nullable NSString *)title withImageName:(NSString *)imageName handler:(void (^__nullable)(BLPopAction *action))handler
++ (instancetype)actionWithTitle:(nullable NSString *)title withImage:(UIImage *)image handler:(void (^__nullable)(BLPopAction *action))handler
 {
     BLPopAction *action = [[BLPopAction alloc]init];
     action.title = title;
-    action.imageName = imageName;
+    action.image = image;
     action.event = handler;
     return action;
 }
@@ -86,7 +86,7 @@
     }
     
     for (int i = 0; i < self.actions.count; i++) {
-        UIButton *button = [self buttonWithTitle:self.actions[i].title index:i image:[UIImage imageNamed:self.actions[i].imageName]];
+        UIButton *button = [self buttonWithTitle:self.actions[i].title index:i image:self.actions[i].image];
         [self.buttonArr addObject:button];
         [self.view addSubview:button];
     }
