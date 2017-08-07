@@ -49,11 +49,14 @@
     [vc addAction:[BLPopAction actionWithTitle:@"bbb" withImageName:@"imgb" handler:^(BLPopAction * _Nonnull action){
         NSLog(@"bbb");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"ccc" withImageName:@"imgc" handler:^(BLPopAction * _Nonnull action){
+    [vc addAction:[BLPopAction actionWithTitle:@"ccc" withImageName:@"imge" handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ccc");
     }]];
     [vc addAction:[BLPopAction actionWithTitle:@"ddd" withImageName:@"imgd" handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ddd");
+    }]];
+    [vc addAction:[BLPopAction actionWithTitle:@"more" withImageName:@"imgc" handler:^(BLPopAction * _Nonnull action){
+        NSLog(@"more");
     }]];
     [self presentViewController:vc animated:YES completion:^{
     }];

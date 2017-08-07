@@ -1,5 +1,5 @@
 PODS:
-  - BLPopHandlerController (0.1.0)
+  - BLPopHandlerController (1.0.3)
 
 DEPENDENCIES:
   - BLPopHandlerController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BLPopHandlerController: f3da9f03804620d4cf408fc626ebe25b1717d68a
+  BLPopHandlerController: 1772454e772c887fb791180bf808a46fc512149a
 
 PODFILE CHECKSUM: e9732072cf369bf8c477cebd939291a23259f5b6
 

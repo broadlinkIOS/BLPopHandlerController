@@ -6,12 +6,12 @@
 //  Copyright © 2017年 方琼蔚. All rights reserved.
 //
 
-#import "PresentationAnimation.h"
+#import "BLPopHandlerAnimation.h"
 
-@interface PresentationAnimation ()
+@interface BLPopHandlerAnimation ()
 @end
 
-@implementation PresentationAnimation
+@implementation BLPopHandlerAnimation
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {

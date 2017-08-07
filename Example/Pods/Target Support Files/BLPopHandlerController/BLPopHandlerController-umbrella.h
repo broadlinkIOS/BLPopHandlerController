@@ -11,10 +11,10 @@
 #endif
 
 #import "BLPopControlViewButton.h"
+#import "BLPopHandlerAnimation.h"
+#import "BLPopHandlerBlurController.h"
 #import "BLPopHandlerController.h"
-#import "PresentationAnimation.h"
-#import "PresentationController.h"
-#import "PresentationTransition.h"
+#import "BLPopHandlerTransition.h"
 
 FOUNDATION_EXPORT double BLPopHandlerControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char BLPopHandlerControllerVersionString[];

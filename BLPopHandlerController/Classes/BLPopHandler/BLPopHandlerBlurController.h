@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PresentationController : UIPresentationController
+@interface BLPopHandlerBlurController : UIPresentationController
 
 - (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController;
 

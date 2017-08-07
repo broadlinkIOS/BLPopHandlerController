@@ -17,7 +17,7 @@
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
-    return CGRectMake(10, 0, self.bounds.size.width - 20 ,self.bounds.size.width - 20);
+    return CGRectMake(10, 0, self.bounds.size.width - 20, self.bounds.size.width - 20);
 }
 
 @end

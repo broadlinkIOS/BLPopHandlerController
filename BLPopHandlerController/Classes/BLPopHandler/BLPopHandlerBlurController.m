@@ -6,13 +6,13 @@
 //  Copyright © 2017年 方琼蔚. All rights reserved.
 //
 
-#import "PresentationController.h"
+#import "BLPopHandlerBlurController.h"
 
-@interface PresentationController()
+@interface BLPopHandlerBlurController()
 @property (nonatomic, strong) UIVisualEffectView *dimmingView;
 @end
 
-@implementation PresentationController
+@implementation BLPopHandlerBlurController
 
 - (instancetype)initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController
 {
@@ -53,9 +53,8 @@
 
 - (void)setupDimmingView
 {
-    UIVisualEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-    _dimmingView = [[UIVisualEffectView alloc]initWithEffect:effect];
-    _dimmingView.alpha = 0.4;
+    _dimmingView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
+    _dimmingView.alpha = 0.6f;
     _dimmingView.center = self.containerView.center;
     _dimmingView.bounds = self.containerView.bounds;
 }

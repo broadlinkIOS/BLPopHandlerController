@@ -11,15 +11,24 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BLPopAction : NSObject
-+ (instancetype)actionWithTitle:(nullable NSString *)title withImageName:(NSString *)imgName handler:(void (^__nullable)(BLPopAction *action))handler;
+
++ (instancetype)actionWithTitle:(nullable NSString *)title
+                  withImageName:(NSString *)imageName
+                        handler:(void (^__nullable)(BLPopAction *action))handler;
+
 @property (nullable, nonatomic, readonly) NSString *title;
-@property (nullable, nonatomic, readonly) NSString *imgName;
+@property (nullable, nonatomic, readonly) NSString *imageName;
+
 @end
 
+
 @interface BLPopHandlerController: UIViewController
-+ (instancetype)popControllerWithCenterImage:(UIImage *)centerImg originFrame:(CGRect)originFrame;
+
++ (instancetype)popControllerWithCenterImage:(UIImage *)centerImage originFrame:(CGRect)originFrame;
 - (void)addAction:(BLPopAction *)action;
+
 @property (nonatomic, readonly) NSArray<BLPopAction *> *actions;
+
 @end
 
 NS_ASSUME_NONNULL_END

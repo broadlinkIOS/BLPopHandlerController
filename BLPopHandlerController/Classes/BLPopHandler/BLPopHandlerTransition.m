@@ -6,24 +6,24 @@
 //  Copyright © 2017年 方琼蔚. All rights reserved.
 //
 
-#import "PresentationTransition.h"
-#import "PresentationController.h"
-#import "PresentationAnimation.h"
+#import "BLPopHandlerTransition.h"
+#import "BLPopHandlerBlurController.h"
+#import "BLPopHandlerAnimation.h"
 
-@interface PresentationTransition ()
-@property (nonatomic, strong) PresentationAnimation *presentAnimation;
+@interface BLPopHandlerTransition ()
+@property (nonatomic, strong) BLPopHandlerAnimation *presentAnimation;
 @end
 
-@implementation PresentationTransition
+@implementation BLPopHandlerTransition
 
 - (id)initOriginFrame:(CGRect)oriFrame{
     _originFrame = oriFrame;
     return [super init];
 }
 
-- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source
+- (BLPopHandlerBlurController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source
 {
-    return [[PresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+    return [[BLPopHandlerBlurController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
@@ -36,20 +36,20 @@
     return [self generateAnimatorWithPresenting:NO];
 }
 
-- (PresentationAnimation *)generateAnimatorWithPresenting:(BOOL)presenting
+- (BLPopHandlerAnimation *)generateAnimatorWithPresenting:(BOOL)presenting
 {
     if (!_presentAnimation) {
-        _presentAnimation = [[PresentationAnimation alloc]init];
+        _presentAnimation = [[BLPopHandlerAnimation alloc] init];
     }
     _presentAnimation.presenting = presenting;
     _presentAnimation.originFrame = _originFrame;
     return _presentAnimation;
 }
 
-- (PresentationAnimation *)presentAnimation
+- (BLPopHandlerAnimation *)presentAnimation
 {
     if (!_presentAnimation) {
-        _presentAnimation = [[PresentationAnimation alloc]init];
+        _presentAnimation = [[BLPopHandlerAnimation alloc] init];
     }
     return _presentAnimation;
 }
