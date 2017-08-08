@@ -11,7 +11,9 @@
 #import "BLPopControlViewButton.h"
 
 #define kRadius             [[UIScreen mainScreen]bounds].size.width * 120.0f / 320.0f
-#define BL_ADDCOLUMNVIEW_LABEL_HEIGHT    20
+#define kSubButtonSize      CGSizeMake(51 + 20.0f, 51 + 20.0f + 10.0f)
+#define kFontSize           12.0f
+#define kFontColor          [UIColor whiteColor]
 
 @interface BLPopAction()
 @property (nullable, nonatomic, readwrite) NSString *title;
@@ -37,6 +39,7 @@
 
 @interface BLPopHandlerController ()
 @property (nonatomic, readwrite) NSMutableArray<BLPopAction *> *actions;
+@property (nonatomic, readwrite) CGRect imageViewFrame;
 @property (nonatomic, strong) NSMutableArray *buttonArr;
 @property (nonatomic, strong) NSMutableArray *lineImgVArray;
 @property (nonatomic, strong) BLPopHandlerTransition *transition;
@@ -47,7 +50,7 @@
 
 + (instancetype)popControllerWithCenterImage:(UIImage *)centerImage originFrame:(CGRect)originFrame
 {
-    BLPopHandlerController *vc = [[BLPopHandlerController alloc]init];
+    BLPopHandlerController *vc = [[BLPopHandlerController alloc] init];
     vc.centerImageView = [[UIImageView alloc]init];
     vc.centerImageView.image = centerImage;
     vc.centerImageView.frame = CGRectMake(0, 0, 150, 150);
@@ -55,7 +58,22 @@
     [vc.view addSubview:vc.centerImageView];
     
     vc.modalPresentationStyle = UIModalPresentationCustom;
-    vc.transition=[[BLPopHandlerTransition alloc]initOriginFrame:originFrame];
+    vc.transition = [[BLPopHandlerTransition alloc] initOriginFrame:originFrame];
+    vc.transitioningDelegate = vc.transition;
+    
+    return vc;
+}
+
++ (instancetype)popControllerWithCenterImage:(UIImage *)centerImage originFrame:(CGRect)originFrame finalFrame:(CGRect)finalFrame
+{
+    BLPopHandlerController *vc = [[BLPopHandlerController alloc] init];
+    vc.centerImageView = [[UIImageView alloc]init];
+    vc.centerImageView.image = centerImage;
+    vc.centerImageView.frame = finalFrame;
+    [vc.view addSubview:vc.centerImageView];
+    
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    vc.transition = [[BLPopHandlerTransition alloc] initOriginFrame:originFrame];
     vc.transitioningDelegate = vc.transition;
     
     return vc;
@@ -69,7 +87,15 @@
     [_actions addObject:action];
 }
 
-- (void)viewDidAppear:(BOOL)animated{
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    if(_radius == 0.f) _radius = kRadius;
+    if(CGSizeEqualToSize(_subButtonSize, CGSizeZero)) _subButtonSize = kSubButtonSize;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
     [super viewDidAppear:animated];
     [self showSubButton];
 }
@@ -95,14 +121,14 @@
     
     int angle = 360 / self.buttonArr.count;
     float radian = angle * M_PI / 180.0;
-    float centerX = self.view.center.x;
-    float centerY = self.view.center.y;
+    float centerX = self.centerImageView.center.x;
+    float centerY = self.centerImageView.center.y;
     
     [UIView animateWithDuration:0.3f animations:^{
         for (int i = 0; i < self.buttonArr.count; i++) {
             UIButton *button = self.buttonArr[i];
-            float x = centerX + kRadius * sinf(radian * (i + 1));
-            float y = centerY + kRadius * cosf(radian * (i + 1));
+            float x = centerX + _radius * sinf(radian * (i + 1));
+            float y = centerY + _radius * cosf(radian * (i + 1));
             button.center = CGPointMake(x, y);
             button.alpha = 1.0f;
             [self.lineImgVArray addObject:[self drawLineFromAngle:angle andCenterX:centerX andCenterY:centerY andRadian:radian andIndex:i andInView:self.view]];
@@ -119,13 +145,11 @@
     button.tag = index;
     [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:title forState:UIControlStateNormal];
-    [button.titleLabel setFont:[UIFont systemFontOfSize:12.0f]];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button.titleLabel setFont:[UIFont systemFontOfSize:kFontSize]];
+    [button setTitleColor:kFontColor forState:UIControlStateNormal];
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
-    const CGFloat width = 51 + 20.0f;
-    const CGFloat height = 51 + 20.0f + 10.0f;
-    [button setBounds:CGRectMake(0, 0, width, height)];
-    button.center = self.view.center;
+    [button setBounds:CGRectMake(0, 0, _subButtonSize.width, _subButtonSize.height)];
+    button.center = self.centerImageView.center;
     [button setImage:image forState:UIControlStateNormal];
     
     return button;
@@ -147,8 +171,8 @@
     CGPoint start;
     CGPoint end;
     float tmpAngle = angle * (idx + 1);
-    float tmpX = kRadius * sinf(radian * (idx + 1));
-    float tmpY = kRadius * cosf(radian * (idx + 1));
+    float tmpX = _radius * sinf(radian * (idx + 1));
+    float tmpY = _radius * cosf(radian * (idx + 1));
     if (tmpAngle > 0 && tmpAngle < 90.0f) {
         start = CGPointMake(centerX + tmpX / 2 + 3.0f, centerY + tmpY / 2 + 3.0f);
         end   = CGPointMake(centerX + tmpX / 2 + 12.0f, centerY + tmpY / 2 + 12.0f);
@@ -199,8 +223,8 @@
     [UIView animateWithDuration:0.3f animations:^{
         for (int i = 0; i < self.buttonArr.count; i++) {
             UIButton *button = self.buttonArr[i];
-            float x = button.center.x - kRadius*sinf(radian * (i + 1));
-            float y = button.center.y - kRadius*cosf(radian * (i + 1));
+            float x = button.center.x - _radius * sinf(radian * (i + 1));
+            float y = button.center.y - _radius * cosf(radian * (i + 1));
             button.center = CGPointMake(x, y);
             button.alpha = 0.0f;
             [self.lineImgVArray removeAllObjects];

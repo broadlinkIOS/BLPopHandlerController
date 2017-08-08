@@ -47,7 +47,7 @@
 		317929B35887D8BAC5184EA205F2F185 /* Pods-BLPopHandlerController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLPopHandlerController_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		353E90FAC5E688BE82C01FC51B795A57 /* Pods-BLPopHandlerController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLPopHandlerController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3B0FE39BFF84A404B681CA656C5C058F /* Pods-BLPopHandlerController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLPopHandlerController_Example-dummy.m"; sourceTree = "<group>"; };
-		3E4F047C328A57609616DE79433B32E1 /* Pods_BLPopHandlerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLPopHandlerController_Example.framework; path = "Pods-BLPopHandlerController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4F047C328A57609616DE79433B32E1 /* Pods_BLPopHandlerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLPopHandlerController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421BFBA2474DBD70F44F9468FAF4354D /* BLPopHandlerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLPopHandlerController-prefix.pch"; sourceTree = "<group>"; };
 		44EEDB6177F9CE13DA0118B328A289E1 /* BLPopHandlerAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLPopHandlerAnimation.h; sourceTree = "<group>"; };
 		483B185087CBE6AA1CFBC20C4FAFBBDE /* Pods-BLPopHandlerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLPopHandlerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,27 +59,27 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		676B069655FC542641401FFCCF68D244 /* BLPopHandlerTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLPopHandlerTransition.h; sourceTree = "<group>"; };
 		727AC2D31387AA6819DCB33173D46A62 /* Pods-BLPopHandlerController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLPopHandlerController_Tests-dummy.m"; sourceTree = "<group>"; };
-		77C0CD13E4097267FC6E17FA37DF30C1 /* Pods_BLPopHandlerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLPopHandlerController_Tests.framework; path = "Pods-BLPopHandlerController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C0CD13E4097267FC6E17FA37DF30C1 /* Pods_BLPopHandlerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLPopHandlerController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0946490B09B3D955625A07A4748600 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		832A85D714230B5CD6B159158A17C459 /* BLPopHandlerBlurController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLPopHandlerBlurController.h; sourceTree = "<group>"; };
 		8513EA9CD6BB77CA2DE885F6B9BE7E83 /* Pods-BLPopHandlerController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLPopHandlerController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8D66C596586B76CE693A234E693436EB /* Pods-BLPopHandlerController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLPopHandlerController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A323DAA042CE4314EAB5803B674EAEE1 /* Pods-BLPopHandlerController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLPopHandlerController_Example-resources.sh"; sourceTree = "<group>"; };
 		AAD8EE452ED311BE712BC9C14B42C428 /* BLPopHandlerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLPopHandlerController-dummy.m"; sourceTree = "<group>"; };
 		ABEE6DE2C4D095B6136F04EE47CD952E /* BLPopHandlerAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLPopHandlerAnimation.m; sourceTree = "<group>"; };
-		AEB45382C4707A1D42CC1312B531481E /* BLPopHandlerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLPopHandlerController.framework; path = BLPopHandlerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB45382C4707A1D42CC1312B531481E /* BLPopHandlerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLPopHandlerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4595B88CB508F6AB214165C2D4FFB3E /* BLPopControlViewButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLPopControlViewButton.m; sourceTree = "<group>"; };
 		B5D6AFB40246DBA3B8F6281755391B4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B4EE439C78C5C118EF0B963136CEA4 /* BLPopHandlerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLPopHandlerController.m; sourceTree = "<group>"; };
 		CA3AFAF290D0843429E8736C44F85999 /* Pods-BLPopHandlerController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLPopHandlerController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CC1E344DF475045A18B96102C523B7E4 /* Pods-BLPopHandlerController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLPopHandlerController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D21D0364FBA278DF39B2B25C5B288325 /* BLPopHandlerBlurController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLPopHandlerBlurController.m; sourceTree = "<group>"; };
-		DA4133E6B954173A3D715195BA28F4D2 /* Pods-BLPopHandlerController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLPopHandlerController_Tests.modulemap"; sourceTree = "<group>"; };
+		DA4133E6B954173A3D715195BA28F4D2 /* Pods-BLPopHandlerController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLPopHandlerController_Tests.modulemap"; sourceTree = "<group>"; };
 		DAB9B0460F56DC9F174B76CC22A7EC75 /* BLPopHandlerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLPopHandlerController-umbrella.h"; sourceTree = "<group>"; };
 		E37020FC986B278BF9AFF5500AA2957F /* Pods-BLPopHandlerController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLPopHandlerController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F21EF50F356812027F74C25FA820BD39 /* BLPopHandlerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BLPopHandlerController.modulemap; sourceTree = "<group>"; };
-		FEDBD5840D3533DD9EC6A5B7C6978DC2 /* Pods-BLPopHandlerController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLPopHandlerController_Example.modulemap"; sourceTree = "<group>"; };
+		F21EF50F356812027F74C25FA820BD39 /* BLPopHandlerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BLPopHandlerController.modulemap; sourceTree = "<group>"; };
+		FEDBD5840D3533DD9EC6A5B7C6978DC2 /* Pods-BLPopHandlerController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLPopHandlerController_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,16 +129,15 @@
 			children = (
 				2B1B5451201A139A1E9B859F24DDC43F /* BLPopControlViewButton.h */,
 				B4595B88CB508F6AB214165C2D4FFB3E /* BLPopControlViewButton.m */,
+				4EF672B2A629517930D6870D29ED4D30 /* BLPopHandlerController.h */,
+				C3B4EE439C78C5C118EF0B963136CEA4 /* BLPopHandlerController.m */,
 				44EEDB6177F9CE13DA0118B328A289E1 /* BLPopHandlerAnimation.h */,
 				ABEE6DE2C4D095B6136F04EE47CD952E /* BLPopHandlerAnimation.m */,
 				832A85D714230B5CD6B159158A17C459 /* BLPopHandlerBlurController.h */,
 				D21D0364FBA278DF39B2B25C5B288325 /* BLPopHandlerBlurController.m */,
-				4EF672B2A629517930D6870D29ED4D30 /* BLPopHandlerController.h */,
-				C3B4EE439C78C5C118EF0B963136CEA4 /* BLPopHandlerController.m */,
 				676B069655FC542641401FFCCF68D244 /* BLPopHandlerTransition.h */,
 				6236E95770D803AED9F662A9EC71634D /* BLPopHandlerTransition.m */,
 			);
-			name = BLPopHandler;
 			path = BLPopHandler;
 			sourceTree = "<group>";
 		};
@@ -147,7 +146,6 @@
 			children = (
 				23C600C11410A38B44392AC864FC4368 /* BLPopHandler */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -156,7 +154,6 @@
 			children = (
 				2F237260AB9B4085D95262E5F13BC35A /* Classes */,
 			);
-			name = BLPopHandlerController;
 			path = BLPopHandlerController;
 			sourceTree = "<group>";
 		};

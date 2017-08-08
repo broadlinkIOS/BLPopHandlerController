@@ -54,7 +54,7 @@
 - (void)setupDimmingView
 {
     _dimmingView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
-    _dimmingView.alpha = 0.6f;
+    _dimmingView.alpha = 0.9f;
     _dimmingView.center = self.containerView.center;
     _dimmingView.bounds = self.containerView.bounds;
 }

@@ -32,9 +32,12 @@ typedef NS_ENUM(NSInteger, BLPopActionStyle) {
 @interface BLPopHandlerController: UIViewController
 
 + (instancetype)popControllerWithCenterImage:(UIImage *)centerImage originFrame:(CGRect)originFrame;
++ (instancetype)popControllerWithCenterImage:(UIImage *)centerImage originFrame:(CGRect)originFrame finalFrame:(CGRect)finalFrame;
 - (void)addAction:(BLPopAction *)action;
 
 @property (nonatomic, readonly) NSArray<BLPopAction *> *actions;
+@property (nonatomic, assign) CGFloat radius;
+@property (nonatomic, assign) CGSize subButtonSize;
 
 @end
 
