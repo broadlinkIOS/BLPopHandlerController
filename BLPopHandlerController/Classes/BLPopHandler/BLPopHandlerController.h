@@ -15,6 +15,8 @@ typedef NS_ENUM(NSInteger, BLPopActionStyle) {
     BLPopActionMore,
 };
 
+typedef void (^TouchEvent)();
+
 @interface BLPopAction : NSObject
 
 + (instancetype)actionWithTitle:(nullable NSString *)title
@@ -38,6 +40,7 @@ typedef NS_ENUM(NSInteger, BLPopActionStyle) {
 @property (nonatomic, readonly) NSArray<BLPopAction *> *actions;
 @property (nonatomic, assign) CGFloat radius;
 @property (nonatomic, assign) CGSize subButtonSize;
+@property (nonatomic, copy) TouchEvent touchEvent;
 
 @end
 

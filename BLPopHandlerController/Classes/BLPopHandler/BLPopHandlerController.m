@@ -151,7 +151,7 @@
     [button setBounds:CGRectMake(0, 0, _subButtonSize.width, _subButtonSize.height)];
     button.center = self.centerImageView.center;
     [button setImage:image forState:UIControlStateNormal];
-    
+     
     return button;
 }
 
@@ -237,7 +237,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self dismissView];
+    if(_touchEvent){
+        _touchEvent();
+    }
+    else{
+        [self dismissView];
+    }
 }
 
 @end

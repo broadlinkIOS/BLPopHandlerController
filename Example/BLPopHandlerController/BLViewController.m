@@ -66,7 +66,9 @@
     
     vc.radius = 100;
     vc.subButtonSize = CGSizeMake(50, 60);
-
+    vc.touchEvent = ^(){
+        NSLog(@"eventAfterDismiss");
+    };
     
     [self presentViewController:vc animated:YES completion:^{
     }];

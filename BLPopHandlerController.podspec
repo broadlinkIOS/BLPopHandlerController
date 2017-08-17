@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BLPopHandlerController'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'BLPopHandlerController.'
  
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'upupSue' => 'bigGIfts@163.com' }
-  s.source           = { :git => 'https://github.com/broadlinkIOS/BLPopHandlerController.git', :tag => '1.0.8' }
+  s.source           = { :git => 'https://github.com/broadlinkIOS/BLPopHandlerController.git', :tag => '1.0.9' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
