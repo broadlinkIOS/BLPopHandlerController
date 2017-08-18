@@ -16,7 +16,8 @@
 
 @implementation BLPopHandlerTransition
 
-- (id)initOriginFrame:(CGRect)oriFrame{
+- (id)initOriginFrame:(CGRect)oriFrame
+{
     _originFrame = oriFrame;
     return [super init];
 }

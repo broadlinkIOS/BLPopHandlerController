@@ -23,8 +23,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    imgView = [[UIImageView alloc]initWithFrame:CGRectMake(60, 100, 50, 50)];
-    imgView.image = [UIImage imageNamed:@"image"];
+    imgView = [[UIImageView alloc] initWithFrame:CGRectMake(60, 100, 50, 50)];
+    imgView.image = [UIImage imageNamed:@"computer"];
     imgView.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onImageViewTap)];
     [imgView addGestureRecognizer:tap];
@@ -47,29 +47,26 @@
 {
     popHandlerController = [BLPopHandlerController popControllerWithCenterImage:[imgView image] originFrame:[imgView.superview convertRect:imgView.frame toView:nil]];
                                       
-    [popHandlerController addAction:[BLPopAction actionWithTitle:@"aaa" withImage:[UIImage imageNamed:@"imga"] handler:^(BLPopAction * _Nonnull action){
-        NSLog(@"aaa");
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"开" withImage:[UIImage imageNamed:@"imga"] handler:^(BLPopAction * _Nonnull action){
+        NSLog(@"开");
     }]];
-    [popHandlerController addAction:[BLPopAction actionWithTitle:@"bbb" withImage:[UIImage imageNamed:@"imgb"] handler:^(BLPopAction * _Nonnull action){
-        NSLog(@"bbb");
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"关" withImage:[UIImage imageNamed:@"imgb"] handler:^(BLPopAction * _Nonnull action){
+        NSLog(@"关");
     }]];
-    [popHandlerController addAction:[BLPopAction actionWithTitle:@"ccc" withImage:[UIImage imageNamed:@"imge"] handler:^(BLPopAction * _Nonnull action){
-        NSLog(@"ccc");
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"温度 +" withImage:[UIImage imageNamed:@"imge"] handler:^(BLPopAction * _Nonnull action){
+        NSLog(@"温度 +");
     }]];
     
-    
-    UIButton *button = [[UIButton alloc] init];
-    [button setBounds:CGRectMake(0, 0, 50, 60)];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundColor:[UIColor clearColor]];
+    [button setBounds:CGRectMake(0, 0, 50, 50)];
     [button setImage:[UIImage imageNamed:@"imgd"] forState:UIControlStateNormal];
-    [button setTitle:@"ddd" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [popHandlerController addAction:[BLPopAction actionWithCustomizeButton:button handler:^(BLPopAction * _Nonnull action){
-        NSLog(@"ddd");
+        NSLog(@"延时");
     }]];
-    
     
     __block BLPopHandlerController *hvc = popHandlerController;
-    [popHandlerController addAction:[BLPopAction actionWithTitle:@"more" withImage:[UIImage imageNamed:@"imgc"] handler:^(BLPopAction * _Nonnull action){
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"更多" withImage:[UIImage imageNamed:@"imgc"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"more");
         [hvc dismissViewControllerAnimated:YES completion:nil];
         NSLog(@"dismiss");

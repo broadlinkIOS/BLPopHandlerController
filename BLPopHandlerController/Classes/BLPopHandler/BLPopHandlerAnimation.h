@@ -12,5 +12,4 @@
 @interface BLPopHandlerAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 @property (nonatomic, assign) BOOL presenting;
 @property (nonatomic, assign) CGRect originFrame;
-@property (nonatomic, assign) CGRect finalFrame;
 @end

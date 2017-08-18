@@ -26,7 +26,7 @@
 
 + (instancetype)actionWithTitle:(nullable NSString *)title withImage:(UIImage *)image handler:(void (^__nullable)(BLPopAction *action))handler
 {
-    BLPopAction *action = [[BLPopAction alloc]init];
+    BLPopAction *action = [[BLPopAction alloc] init];
     action.title = title;
     action.image = image;
     action.event = handler;
@@ -35,7 +35,7 @@
 
 + (instancetype)actionWithCustomizeButton:(UIButton *)button handler:(void (^__nullable)(BLPopAction *action))handler
 {
-    BLPopAction *action = [[BLPopAction alloc]init];
+    BLPopAction *action = [[BLPopAction alloc] init];
     action.customizeButton = button;
     action.event = handler;
     return action;
@@ -57,7 +57,7 @@
 + (instancetype)popControllerWithCenterImage:(UIImage *)centerImage originFrame:(CGRect)originFrame
 {
     BLPopHandlerController *vc = [[BLPopHandlerController alloc] init];
-    vc.centerImageView = [[UIImageView alloc]init];
+    vc.centerImageView = [[UIImageView alloc] init];
     vc.centerImageView.image = centerImage;
     vc.centerImageView.frame = CGRectMake(0, 0, 150, 150);
     vc.centerImageView.center = vc.view.center;
@@ -73,7 +73,7 @@
 + (instancetype)popControllerWithCenterImage:(UIImage *)centerImage originFrame:(CGRect)originFrame finalFrame:(CGRect)finalFrame
 {
     BLPopHandlerController *vc = [[BLPopHandlerController alloc] init];
-    vc.centerImageView = [[UIImageView alloc]init];
+    vc.centerImageView = [[UIImageView alloc] init];
     vc.centerImageView.image = centerImage;
     vc.centerImageView.frame = finalFrame;
     [vc.view addSubview:vc.centerImageView];
@@ -87,8 +87,8 @@
 
 - (void)addAction:(BLPopAction *)action
 {
-    if(_actions == nil){
-        _actions = [[NSMutableArray alloc]init];
+    if (_actions == nil) {
+        _actions = [[NSMutableArray alloc] init];
     }
     [_actions addObject:action];
 }
@@ -96,8 +96,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if(_radius == 0.f) _radius = kRadius;
-    if(CGSizeEqualToSize(_subButtonSize, CGSizeZero)) _subButtonSize = kSubButtonSize;
+    if (_radius == 0.f) {
+        _radius = kRadius;
+    }
+    if (CGSizeEqualToSize(_subButtonSize, CGSizeZero)) {
+        _subButtonSize = kSubButtonSize;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -150,9 +154,7 @@
             [self.lineImgVArray addObject:[self drawLineFromAngle:angle andCenterX:centerX andCenterY:centerY andRadian:radian andIndex:i andInView:self.view]];
         }
         
-    } completion:^(BOOL finished) {
-        
-    }];
+    } completion:nil];
 }
 
 - (UIButton *)buttonWithTitle:(NSString *)title index:(NSInteger)index image:(UIImage *)image
