@@ -18,6 +18,7 @@
 @interface BLPopAction()
 @property (nullable, nonatomic, readwrite) NSString *title;
 @property (nullable, nonatomic, readwrite) UIImage *image;
+@property (nullable, nonatomic, readwrite) UIButton *customizeButton;
 @property (nonatomic, readwrite) BLPopActionStyle style;
 @property (nonatomic, copy) void (^event)(BLPopAction *action);
 @end
@@ -29,6 +30,15 @@
     BLPopAction *action = [[BLPopAction alloc]init];
     action.title = title;
     action.image = image;
+    action.style = style;
+    action.event = handler;
+    return action;
+}
+
++ (instancetype)actionWithCustomizeButton:(UIButton *)button style:(BLPopActionStyle)style handler:(void (^__nullable)(BLPopAction *action))handler
+{
+    BLPopAction *action = [[BLPopAction alloc]init];
+    action.customizeButton = button;
     action.style = style;
     action.event = handler;
     return action;
@@ -114,9 +124,19 @@
     }
     
     for (int i = 0; i < self.actions.count; i++) {
-        UIButton *button = [self buttonWithTitle:self.actions[i].title index:i image:self.actions[i].image];
-        [self.buttonArr addObject:button];
-        [self.view addSubview:button];
+        if (self.actions[i].customizeButton) {
+            UIButton *button = self.actions[i].customizeButton;
+            button.center = self.centerImageView.center;
+            button.tag = i;
+            [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+            [self.buttonArr addObject:button];
+            [self.view addSubview:button];
+        }
+        if (self.actions[i].image) {
+            UIButton *button = [self buttonWithTitle:self.actions[i].title index:i image:self.actions[i].image];
+            [self.buttonArr addObject:button];
+            [self.view addSubview:button];
+        }
     }
     
     int angle = 360 / self.buttonArr.count;

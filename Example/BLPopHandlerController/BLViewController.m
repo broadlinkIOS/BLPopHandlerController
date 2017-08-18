@@ -57,7 +57,11 @@
     [vc addAction:[BLPopAction actionWithTitle:@"ccc" withImage:[UIImage imageNamed:@"imge"] style:BLPopActionDefault handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ccc");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"ddd" withImage:[UIImage imageNamed:@"imgd"] style:BLPopActionDefault handler:^(BLPopAction * _Nonnull action){
+    
+    UIButton *btn = [[UIButton alloc] init];
+    [btn setBounds:CGRectMake(0, 0, 50, 60)];
+    [btn setImage:[UIImage imageNamed:@"imgd"] forState:UIControlStateNormal];
+    [vc addAction:[BLPopAction actionWithCustomizeButton:btn style:BLPopActionDefault handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ddd");
     }]];
     [vc addAction:[BLPopAction actionWithTitle:@"more" withImage:[UIImage imageNamed:@"imgc"] style:BLPopActionMore handler:^(BLPopAction * _Nonnull action){
