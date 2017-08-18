@@ -35,6 +35,7 @@ typedef BOOL (^IsDissmissBlock)();
 - (void)addAction:(BLPopAction *)action;
 
 @property (nonatomic, readonly) NSArray<BLPopAction *> *actions;
+@property (nonatomic, strong) UIImageView *centerImageView;
 @property (nonatomic, assign) CGFloat radius;
 @property (nonatomic, assign) CGSize subButtonSize;
 @property (nonatomic, copy) IsDissmissBlock isDissmissBlock;

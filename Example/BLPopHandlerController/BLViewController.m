@@ -63,7 +63,6 @@
     [button setImage:[UIImage imageNamed:@"imgd"] forState:UIControlStateNormal];
     [button setTitle:@"ddd" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    
     [popHandlerController addAction:[BLPopAction actionWithCustomizeButton:button handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ddd");
     }]];

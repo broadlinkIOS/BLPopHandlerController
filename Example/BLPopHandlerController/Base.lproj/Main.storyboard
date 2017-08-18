@@ -27,23 +27,5 @@
             </objects>
             <point key="canvasLocation" x="-138" y="431"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="t39-wc-oVY">
-            <objects>
-                <viewController id="Rdu-hI-uKD" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1Cm-5x-l2u"/>
-                        <viewControllerLayoutGuide type="bottom" id="Q9y-gV-6Rl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NJc-W5-ggw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mq-CZ-rhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1020" y="432"/>
-        </scene>
     </scenes>
 </document>

@@ -50,7 +50,6 @@
 @property (nonatomic, strong) NSMutableArray *buttonArr;
 @property (nonatomic, strong) NSMutableArray *lineImgVArray;
 @property (nonatomic, strong) BLPopHandlerTransition *transition;
-@property (nonatomic, strong) UIImageView *centerImageView;
 @end
 
 @implementation BLPopHandlerController
