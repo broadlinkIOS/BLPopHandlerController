@@ -10,28 +10,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger, BLPopActionStyle) {
-    BLPopActionDefault = 0,
-    BLPopActionMore,
-};
-
 typedef BOOL (^IsDissmissBlock)();
 
 @interface BLPopAction : NSObject
 
 + (instancetype)actionWithTitle:(nullable NSString *)title
                       withImage:(UIImage *)image
-                          style:(BLPopActionStyle)style
                         handler:(void (^__nullable)(BLPopAction *action))handler;
 
 + (instancetype)actionWithCustomizeButton:(UIButton *)button
-                                    style:(BLPopActionStyle)style
                                   handler:(void (^__nullable)(BLPopAction *action))handler;
 
 @property (nullable, nonatomic, readonly) NSString *title;
 @property (nullable, nonatomic, readonly) UIImage *image;
 @property (nullable, nonatomic, readonly) UIButton *button;
-@property (nonatomic, readonly) BLPopActionStyle style;
 
 @end
 

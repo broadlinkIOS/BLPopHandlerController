@@ -11,6 +11,7 @@
 
 @interface BLViewController (){
     UIImageView *imgView;
+    BLPopHandlerController *popHandlerController;
 }
 
 @end
@@ -44,34 +45,41 @@
 
 - (void)onImageViewTap
 {
-//    BLPopHandlerController *vc = [BLPopHandlerController popControllerWithCenterImage:[imgView image] originFrame:[imgView.superview convertRect:imgView.frame toView:nil]];
-    
-    BLPopHandlerController *vc = [BLPopHandlerController popControllerWithCenterImage:[imgView image] originFrame:[imgView.superview convertRect:imgView.frame toView:nil] finalFrame:CGRectMake(100, 200, 100, 100)];
+    popHandlerController = [BLPopHandlerController popControllerWithCenterImage:[imgView image] originFrame:[imgView.superview convertRect:imgView.frame toView:nil]];
                                       
-    [vc addAction:[BLPopAction actionWithTitle:@"aaa" withImage:[UIImage imageNamed:@"imga"] style:BLPopActionDefault handler:^(BLPopAction * _Nonnull action){
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"aaa" withImage:[UIImage imageNamed:@"imga"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"aaa");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"bbb" withImage:[UIImage imageNamed:@"imgb"] style:BLPopActionDefault handler:^(BLPopAction * _Nonnull action){
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"bbb" withImage:[UIImage imageNamed:@"imgb"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"bbb");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"ccc" withImage:[UIImage imageNamed:@"imge"] style:BLPopActionDefault handler:^(BLPopAction * _Nonnull action){
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"ccc" withImage:[UIImage imageNamed:@"imge"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ccc");
     }]];
     
-    UIButton *btn = [[UIButton alloc] init];
-    [btn setBounds:CGRectMake(0, 0, 50, 60)];
-    [btn setImage:[UIImage imageNamed:@"imgd"] forState:UIControlStateNormal];
-    [vc addAction:[BLPopAction actionWithCustomizeButton:btn style:BLPopActionDefault handler:^(BLPopAction * _Nonnull action){
+    
+    UIButton *button = [[UIButton alloc] init];
+    [button setBounds:CGRectMake(0, 0, 50, 60)];
+    [button setImage:[UIImage imageNamed:@"imgd"] forState:UIControlStateNormal];
+    [button setTitle:@"ddd" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
+    [popHandlerController addAction:[BLPopAction actionWithCustomizeButton:button handler:^(BLPopAction * _Nonnull action){
         NSLog(@"ddd");
     }]];
-    [vc addAction:[BLPopAction actionWithTitle:@"more" withImage:[UIImage imageNamed:@"imgc"] style:BLPopActionMore handler:^(BLPopAction * _Nonnull action){
+    
+    
+    __block BLPopHandlerController *hvc = popHandlerController;
+    [popHandlerController addAction:[BLPopAction actionWithTitle:@"more" withImage:[UIImage imageNamed:@"imgc"] handler:^(BLPopAction * _Nonnull action){
         NSLog(@"more");
+        [hvc dismissViewControllerAnimated:YES completion:nil];
+        NSLog(@"dismiss");
     }]];
     
-    vc.radius = 100;
-    vc.subButtonSize = CGSizeMake(50, 60);
+//    vc.radius = 100;
+//    vc.subButtonSize = CGSizeMake(50, 60);
     __block int i = 0;
-    vc.isDissmissBlock = ^(){
+    popHandlerController.isDissmissBlock = ^(){
         if(i == 0){
             i++;
             return NO;
@@ -79,8 +87,7 @@
         else return YES;
     };
     
-    [self presentViewController:vc animated:YES completion:^{
-    }];
+    [self presentViewController:popHandlerController animated:YES completion:nil];
 }
 
 @end

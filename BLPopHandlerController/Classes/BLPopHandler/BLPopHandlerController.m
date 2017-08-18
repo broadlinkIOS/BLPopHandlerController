@@ -19,27 +19,24 @@
 @property (nullable, nonatomic, readwrite) NSString *title;
 @property (nullable, nonatomic, readwrite) UIImage *image;
 @property (nullable, nonatomic, readwrite) UIButton *customizeButton;
-@property (nonatomic, readwrite) BLPopActionStyle style;
 @property (nonatomic, copy) void (^event)(BLPopAction *action);
 @end
 
 @implementation BLPopAction
 
-+ (instancetype)actionWithTitle:(nullable NSString *)title withImage:(UIImage *)image style:(BLPopActionStyle)style handler:(void (^__nullable)(BLPopAction *action))handler
++ (instancetype)actionWithTitle:(nullable NSString *)title withImage:(UIImage *)image handler:(void (^__nullable)(BLPopAction *action))handler
 {
     BLPopAction *action = [[BLPopAction alloc]init];
     action.title = title;
     action.image = image;
-    action.style = style;
     action.event = handler;
     return action;
 }
 
-+ (instancetype)actionWithCustomizeButton:(UIButton *)button style:(BLPopActionStyle)style handler:(void (^__nullable)(BLPopAction *action))handler
++ (instancetype)actionWithCustomizeButton:(UIButton *)button handler:(void (^__nullable)(BLPopAction *action))handler
 {
     BLPopAction *action = [[BLPopAction alloc]init];
     action.customizeButton = button;
-    action.style = style;
     action.event = handler;
     return action;
 }
@@ -177,9 +174,6 @@
 
 - (void)btnClick:(UIButton *)btn
 {
-    if(_actions[btn.tag].style == BLPopActionMore)
-        [self dismissViewControllerAnimated:NO completion:nil];
-    
     _actions[btn.tag].event(_actions[btn.tag]);
 }
 
