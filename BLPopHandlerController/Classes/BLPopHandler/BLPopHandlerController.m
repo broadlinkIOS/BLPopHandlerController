@@ -237,10 +237,10 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    if(_touchEvent){
-        _touchEvent();
+    if (!_isDissmissBlock) {
+        [self dismissView];
     }
-    else{
+    else if (_isDissmissBlock()) {
         [self dismissView];
     }
 }
